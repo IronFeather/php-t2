@@ -12,7 +12,27 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: url("/pagweb/img/bg_1.jpg");
+    background-image: url("../img/bg_1.jpg");
+    background-size: cover;
+    background-position: top center;
+    opacity: 0.5;
+}
+
+.wrapper_2 {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    background-color: black;
+}
+
+.wrapper_2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("../img/bg_2.jpg");
     background-size: cover;
     background-position: top center;
     opacity: 0.5;
@@ -21,16 +41,239 @@
 .shadow {
     position: relative;
     height: 100%;
-    box-shadow: inset 0 60px 40px -7px #D4161C;
+    box-shadow: inset 0 190px 200px -170px #D4161C;
 }
 
+.nonebox {
+    box-shadow: none;
+}
+
+/* -------------------Contenido principal------------------ */
 .main {
     height: 100%;
-    margin: 0 25%;
+    margin: 0 27%;
     padding-top: 50px;
 }
 
 .main-title {
     text-align: right;
     font-size: 80px;
+    margin-bottom: 90px;
+    line-height: 90px;
+    letter-spacing: -3px;
+
+}
+
+.main-comment {
+    display: flex;
+    align-items: center;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+    background-color: #333333;
+    height: 55px;
+    width: fit-content;
+    
+    box-shadow: 2px 2px 2px black;
+
+    margin: 0px 5% 60px 5%;
+    padding-right: 20px;
+}
+
+.main-comment-number {
+    width: 80px;
+    margin-left: 20px;
+    color: #ff777c
+}
+
+
+/*------------------- Section ------------------- */
+.section-main-img {
+    width: 500px;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 25%;
+    height: 100%;
+    width: auto;
+}
+
+ img {
+    opacity: 1;
+    transition: transform 0.4s;
+}
+
+ img:hover {
+    transform: scale(0.98);
+    opacity: 0.9;
+}
+
+.section-title {
+    font-size: 48px;
+}
+
+.section-main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.section-main-content {
+    margin-left: 80px;
+}
+
+
+.section-main-content-title {
+    text-align: right;
+    font-size: 64px;
+    margin-bottom: 20px;
+    line-height: 70px;
+    letter-spacing: -3px;
+}
+
+.section-main-content-paragraph {
+    text-align: right;
+}
+
+.section-showcase-video {
+    width: 98%;
+    height: 100%;
+}
+
+th, td {
+    width: 10%;
+    overflow: hidden;
+}
+
+/*------------------- Artículo ------------------- */
+
+.article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10%;
+    height: 1000px;
+}
+
+.article-wrapper {
+    width: 100%;
+    padding: 50px;
+}
+
+.article h2 {
+    margin-bottom: 30px;
+}
+
+.article img {
+    padding: 20px;
+    align-self: center;
+    max-width: 100%;
+    height: 400px;
+}
+
+article a {
+    width: 100%;
+}
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)
+{
+    .wrapper {
+
+        height: 650px;
+
+    }
+
+    /* -------------------Contenido principal------------------ */
+    .main {
+        margin: 0 5%;
+    }
+    
+    .main-title {
+        font-size: 16px;
+        margin-bottom: 30px;
+        line-height: 40px;
+        letter-spacing: 0px;
+    }
+    
+    .main-comment {
+        font-size: small;
+        font-weight: bold;
+        height: 40px;
+        margin: 0px 5% 20px 5%;
+        padding-right: 20px;
+    }
+    
+    .main-comment-number {
+        width: 60px;
+        margin-left: 20px;
+        color: #ff777c
+    }
+
+    /*------------------- Section ------------------- */
+    .section {
+        margin: 0 5%;
+        height: 100%;
+        width: auto;
+    }
+
+    .section-main-img {
+        width: 324px;
+    }
+
+    .section-title {
+        font-size: 18px;
+    }
+
+    .section-main {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .section-main-content {
+        margin-left: 0px;
+    }
+
+    .section-main-content-title {
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 20px;
+        line-height: 30px;
+        letter-spacing: -3px;
+    }
+    .section-main-content-paragraph {
+        text-align: center;
+    }   
+    
+    /*------------------- Artículo ------------------- */
+    .article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 10%;
+        height: 600px;
+    }
+
+    .article-wrapper {
+        padding: 5px;
+    }
+
+    .article h2 {
+        margin-bottom: 15px;
+    }
+
+    .article img {
+        padding: 0px;
+        height: auto;
+    }
 }

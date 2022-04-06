@@ -1,114 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/pagweb/css/style.css">
-    <title>Fútbol Chile</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Fútbol Chile</title>
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fira+Sans&display=swap" rel="stylesheet">
+  <!-- Bootstrap usado solo para los iconos -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+
 </head>
 <body>
-    <header>
-        <a href="#"><img src="/pagweb/img/logo.png" width="64px" height="64px" alt="Logo roja"></a>
-        <ul class="nav">
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
-        </ul>
-    </header>
-      <div class="wrapper">
-        <div class="shadow">
-          <main class="main">
-            <h1 class="main-title">Top digital media <br>
-              group in soccer related audiences</h1>
-            <div class="main-comment">
-              <p class="main-comment-number">35</p>
-              <p class="main-comment-text">Adipisicing elit. Placeat non dolorum corporis eligendi </p>
-            </div>
-            <div class="main-comment">
-              <p class="main-comment-number"></p>
-              <p class="main-comment-text"></p>
-            </div>
-            <div class="main-comment">
-              <p class="main-comment-number"></p>
-              <p class="main-comment-text"></p>
-            </div>
-            <button class="main-button"></button> 
-          </main>
+  <!-- Header -->
+  <header id="header">
+      <a href="#"><img src="img/logo.png" width="64px" height="64px" alt="Logo roja"></a>
+      <ul class="nav">
+          <li><a class="active" href="#home">Inicio</a></li>
+          <li><a href="#article">Noticia</a></li>
+          <li><a href="#jugadores">Top jugadores</a></li>
+          <li><a href="#footer">Pie</a></li>
+      </ul>
+  </header>
+
+  <!-- Contenido principal -->
+  <div class="wrapper">
+    <div class="shadow">
+      <main class="main">
+        <h1 class="main-title"> <span style="font-size: 42px;">Selección Chilena</span>  <br>
+          La <span style="color: #d41620; font-size: 100px; text-shadow: -1px 3px 2px white;">ROJA</span>  se lleva <br> en el corazón</h1>
+        <div class="main-comment">
+          <p class="main-comment-number">2+4u</p>
+          <p class="main-comment-text">2 Copa America + 4 veces subcampeón</p>
+        </div>
+        <div class="main-comment">
+          <p class="main-comment-number">+17a</p>
+          <p class="main-comment-text">17 años lleva el capitán Claudio Bravo en la selección</p>
+        </div>
+        <div class="main-comment">
+          <p class="main-comment-number">+110</p>
+          <p class="main-comment-text"> Más de 110 partidos en Estadio Nacional Julio Martínez</p>
+        </div>
+      </main>
+    </div>
+  </div>
+  
+  <!-- Sección -->
+  <div id="jugadores" class="wrapper_2">
+    <div class="shadow nonebox">
+      <section class="section">
+        <h1 class="section-title">Top jugadores</h1>
+        <div class="section-main">
+          <a href="https://es.wikipedia.org/wiki/Alexis_S%C3%A1nchez" target="_blank"><img class="section-main-img" src="img/alexis.jpg" alt=""></a>
+          <div class="section-main-content">
+            <h2 class="section-main-content-title">Mejores jugadores</h2>
+            <p class="section-main-content-paragraph">El #1 no nada más y nada menos que el máximo goleador de la historia de la Selección Chilena, que supo tener un gran nivel en la Copa América de 2015, donde vencieron a la Argentina. Además, tuvo grandes pasos por equipos importantes como el Udinese, Barcelona, Arsenal, Manchester United e Inter de Milán.</p>
+          </div>
+        </div>
+        <!-- Top jugadores -->
+        <div class="section-showcase">
+          <table class="section-showcase-table>">
+            <tr>
+              <td><a href="https://es.wikipedia.org/wiki/Arturo_Vidal" target="_blank"><img class="section-showcase-video" src="img/arturo.jpg" alt=""></a></td>
+              <td><a href="https://es.wikipedia.org/wiki/Claudio_Bravo" target="_blank"><img class="section-showcase-video" src="img/claudio.jpg" alt=""></a></td>
+              <td><a href="https://es.wikipedia.org/wiki/Charles_Ar%C3%A1nguiz" target="_blank"><img class="section-showcase-video" src="img/charles.jpg" alt=""></a></td>
+            </tr>
+            <tr>
+              <td><a href="https://es.wikipedia.org/wiki/Erick_Pulgar" target="_blank"><img class="section-showcase-video" src="img/erick.jpg" alt=""></a></td>
+              <td><a href="https://es.wikipedia.org/wiki/Eduardo_Vargas" target="_blank"><img class="section-showcase-video" src="img/eduardo.jpg" alt=""></a></td>
+              <td><a href="https://es.wikipedia.org/wiki/Felipe_Mora#:~:text=Felipe%20Andr%C3%A9s%20Mora%20Aliaga%20(Santiago,f%C3%BAtbol%20de%20Chile%20desde%202018." target="_blank"><img class="section-showcase-video" src="img/felipe.jpg" alt=""></a></td>
+            </tr>
+          </table>
+        </div>
+    </section>
+  </div>
+
+  <!-- Artículo -->
+  <article id="article" class="article">
+    <div class="article-wrapper">
+      <h2>Sindicato de Árbitros se va a paro tras los despidos de Castrilli</h2>
+      <p>La organización decidió paralizar sus funciones, luego de una votación unánime. Según indicó el vocero, Felipe Jara, “el petitorio es claro... la salida de Castrilli”.</p>
+    </div>
+    <a href="https://chile.as.com/noticias/futbol/" target="_blank"><img src="img/article.jpg" alt=""></a>
+  </article>
+
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="banner-wrapper">
+      <div class="icon-text">
+        <div class="icon-text-icon">
+          <ul class="footer-nav">
+            <li><a href="#header">Inicio</a></li>
+            <li><a href="#article">Noticia</a></li>
+            <li><a href="#jugadores">Top jugadores</a></li>
+          </ul>
+        </div>
+        <div c lass="icon-text-text">
+          <ul class="social">
+            <li><a target="_blank" href="https://twitter.com/LaRoja?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa fa-twitter"></i></a></li>
+            <li><a target="_blank" href="https://www.youtube.com/channel/UCcxSAppTL9uUkV6-rEuT5Og"><i class="fa fa-youtube"></i></a></li>
+            <li><a target="_blank" href="https://www.instagram.com/laroja/?hl=es-la"><i class="fa fa-instagram"></i></a></li>
+          </ul>
         </div>
       </div>
-
     </div>
-
-    <div class="wrapper">
-      <article class="article">
-          <h1 class="article-title"></h1>
-          <img class="article-img" src="" alt="">
-      </article>
-    </div>
-
-    <div class="wrapper">
-      <section class="section">
-        <h1 class="section-title"></h1>
-        <div class="section-main">
-          <img src="" alt="">
-          <div class="section-main-content">
-            <h2 class="section-main-content-title"></h2>
-            <p class="section-main-content-paragraph"></p>
-          </div>
-        </div>
-
-        <div class="section-showcase">
-          <img class="section-showcase-video" src="" alt="">
-          <img class="section-showcase-video" src="" alt="">
-          <img class="section-showcase-video" src="" alt="">
-          <img class="section-showcase-video" src="" alt="">
-          <img class="section-showcase-video" src="" alt="">
-          <img class="section-showcase-video" src="" alt="">
-        </div>
-
-      </section>
-    </div>
-
-    <footer>
-        <div class="banner-wrapper">
-          <div class="icon-text">
-            <div class="icon-text-icon">
-              <ul class="footer-nav">
-                <li><a href="PagProf.html">INICIO</a></li>
-                <li><a href="#">Destrezas</a></li>
-                <li><a href="#">Portafolio</a></li>
-                <li><a href="#">Nuestro Equipo</a></li>
-                <li><a href="#">Contactos</a></li>
-              </ul>
-            </div>
-            <div class="icon-text-text">
-              <ul class="social">
-                <li><a href="mailto:contact@faztweb.com"><i class="fa fa-envelope-o"></i></a></li>
-                <li><a href="http://facebook.com/fazttech"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="http://twitter.com/fazttech"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="http://youtube.com/fazttech"><i class="fa fa-youtube"></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </footer>
+  </footer>
 </body>
 </html>
-
-<!-- 
-Página en la cual basarse: 
-	https://www.futbolsites.net/
-	https://laroja.cl/
-
-Rehacer diseño en figma en base a referencias con futbol Chileno.
-
-La página debe tener:
--Responsive
--Diseño: Encabezado, Sección, Artículos, Columnas, Pie de páginas, Comentarios.
--Tablas, Listas, enlaces a páginas de los futbolistas.
--Videos de los Futbolistas (no todos)
--Imágenes
- -->

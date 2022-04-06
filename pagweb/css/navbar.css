@@ -1,4 +1,7 @@
+/* CSS para navbar, utiliza principalmente flex para la distribución del logo y los links de navegación, cada link es una etiqueta a dentro de una lista. */
+
 header {
+    opacity: 1;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -8,30 +11,42 @@ header {
     height: 100px;
 }
 
+/* Se alinean los elementos del header en fila */
 .nav {
     display: flex;
     flex-direction:row;
     align-items: center;
 }
 
-/* Style the links inside the navigation bar */
+/* Se estilan los elementos de navegación */
 .nav a {
+    font-family: ;
     float: left;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 18px;
 }
 
-/* Change the color of links on hover */
+/* Color de los links en Hover */
 .nav a:hover {
     background-color: white;
     color: #D4161C;
 }
 
-/* Add a color to the active/current link */
+/* Color del hover activo */
 .nav a.active {
     background-color: white;
     color: #D4161C;
+}
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)
+{
+    .nav a {
+        padding: 7px 4px;
+        font-size: 12px;
+    }
 }

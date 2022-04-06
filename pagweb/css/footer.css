@@ -1,0 +1,69 @@
+/* El código del footer se enfoca en mostrar de forma correcta los iconos, darles un color blanco y distribuir los links en la zona */
+
+footer {
+    opacity: 1;
+    background-color: rgba(red, green, blue, alpha);
+    background-color: rgba(212, 22, 28, 0.7);
+    padding: 50px 0px;
+    width: 100%;
+    overflow: auto;
+}
+
+.icon-text {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.icon-text-icon {
+    float: left;
+    width: 20%;
+    padding: 2%;
+}
+
+.icon-text-text {
+    float: left;
+    width: 60%;
+    padding: 4% 4% 2% 0;
+    font-size: small;
+}
+
+.footer-nav {
+    text-align: right;
+}
+
+.footer-nav a {
+    font-size: 160%;
+    color: white;
+    font-weight: 300;
+}
+
+.footer-nav a:hover {
+    color: #D4161C;
+}
+
+.social {
+    list-style-type: none;
+    text-align: center;
+}
+
+.social li {
+    display: inline;
+}
+
+.social i {
+    font-size: 250%;
+    margin: 1%;
+    padding: 3%;
+    color: white;
+}
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)
+{
+    .footer-nav a {
+        font-size: 100%;
+        color: white;
+        font-weight: 300;
+    }
+}
